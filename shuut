@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#Remember to specify which USER you want information from after the command.
+#Example from root user: ./showusermem.sh root
+echo "System utilization for $1"
+echo "RAM"
+ps -U $1 --format %mem | awk '{memory +=$1}; END {print memory}'
+
+echo "CPU"
+ps -U $1 --format %cpu | awk '{CPU +=$1}; END {print CPU}'
