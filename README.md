@@ -1,2 +1,3 @@
 # shuut
-View user utilisation of Linux system
+# This program is made to show stats on how a user strains resources from the system
+# syntax is: shuut <USER>
